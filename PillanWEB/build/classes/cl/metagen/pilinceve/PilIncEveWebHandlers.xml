@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="LATIN1"?>
+<!-- Archivo:           PilIncEveWebHandlers.xml                                 -->
+<!-- Fecha de Creación: Sabado 29 de Abril de 2017 - 14:28:36                    -->
+<!-- Autor:             Ecu5GL.GenCode 3.20C18H (buildWebControlFiles V 1.0.4)   -->
+<!--                                                                             -->
+<!-- Objetivo:                                                                   -->
+<!--          Permite administrar la seguridad de los WebServices                -->
+<!--                                                                             -->
+<!-- Copyright (c) CHABRETUAL LTDA (Chile) Derechos reservados.                  -->
+<!--                                                                             -->
+<!-- Este es un archivo generado.                                                -->
+<!-- NO MODIFIQUE ESTE ARCHIVO                                                   -->
+<!--                                                                             -->
+<handler-chains
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:javaee="http://java.sun.com/xml/ns/javaee"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+      http://java.sun.com/xml/ns/javaee/javaee_web_services_metadata_handler_2_0.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <handler-chain>
+      <handler>
+          <handler-name>SecurityHandler</handler-name>
+          <handler-class>cl.chabretual.ws.handler.soap.SecurityHandler</handler-class>
+      </handler>
+  </handler-chain>
+  
+</handler-chains>
+<!-- {.Checksum("19e5f8aa14e91958097aff26447cf2d6").} -->

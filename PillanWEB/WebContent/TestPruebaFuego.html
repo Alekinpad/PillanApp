@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+#map {
+  height: 100%;
+}
+
+
+
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+</style>
+<script language="JavaScript">
+var map;
+var marcador;
+var  limits  =  new  google.maps.LatLngBounds();
+var labels = 'Prueba de Marcador';
+var labelIndex = 0;
+
+function initMap() {
+
+  //Posicionamiento del evento
+  var LatLngEvento1 = {
+    lat: -33.443018,
+    lng: -70.65387
+  };
+	
+	var LatLngEvento2 = {
+    lat: -33.4591,
+    lng: -70.699
+  };
+	
+	var LatLngEvento3 = {
+    lat: -33.4365,
+    lng: -70.635
+  };
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {
+      lat: -33.4569400,
+      lng: -70.6482700
+    },
+    zoom: 13
+  });
+  
+	var image1 = 'http://test.it-developers.cl/Fuegorojo.png'
+	var image2 = 'http://test.it-developers.cl/Fuegoazul.png'
+	var image3 = 'http://test.it-developers.cl/greenfire.png'
+	
+  var Marcador1 = new google.maps.Marker({  
+    position: LatLngEvento1,
+      map: map,
+      icon: image1
+  });
+	
+	var Marcador2 = new google.maps.Marker({  
+    position: LatLngEvento2,
+      map: map,
+      icon: image2
+  });
+	
+	var Marcador3 = new google.maps.Marker({  
+    position: LatLngEvento3,
+      map: map,
+      icon: image3
+  });
+	
+  marker.setMap(map);
+}
+
+</script>
+
+</head>
+<body>
+<div id="map"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlfhV-NrE3e1cYlrthQKgBmPQdlf4na9A&callback=initMap" async defer>
+
+  </script>
+
+</body>
+</html>
+
+
+
+

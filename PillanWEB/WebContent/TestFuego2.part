@@ -1,0 +1,18 @@
+	
+  var Marcador1 = new google.maps.Marker({  
+    position: LatLngEvento1,
+      map: map,
+      icon: image1
+  });
+	
+	var Marcador2 = new google.maps.Marker({  
+    position: LatLngEvento2,
+      map: map,
+      icon: image2
+  });
+	
+	var Marcador3 = new google.maps.Marker({  
+    position: LatLngEvento3,
+      map: map,
+      icon: image3
+  });
